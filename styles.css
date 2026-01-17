@@ -1,0 +1,86 @@
+:root{
+  --bg1:#071025;
+  --bg2:#07131b;
+  --card: rgba(255,255,255,0.03);
+  --muted:#9aa6b2;
+  --accent:#ffd54f;
+  --accent2:#06b6d4;
+  --max-width:1100px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0;
+  min-height:100%;
+  background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 60%);
+  color:#e6eef6;
+  line-height:1.7;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:64px 32px;
+}
+
+/* Navigation */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:64px;
+}
+
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+  margin-left:28px;
+}
+
+.nav a:hover{
+  color:var(--accent);
+}
+
+/* Headings */
+h1{ font-size:52px; margin-bottom:24px; }
+h2{ font-size:36px; margin-bottom:16px; }
+h3{ font-size:26px; margin-bottom:12px; }
+
+/* Cards */
+.card{
+  background: var(--card);
+  border-radius:16px;
+  padding:32px;
+  margin-top:32px;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.btn-primary{
+  background: linear-gradient(90deg, var(--accent2), #7c3aed);
+  color:#fff;
+}
+
+.btn-outline{
+  border:1px solid var(--accent2);
+  color:var(--accent2);
+}
+
+/* Footer */
+footer{
+  margin-top:96px;
+  padding-top:32px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  color:var(--muted);
+  font-size:15px;
+}
