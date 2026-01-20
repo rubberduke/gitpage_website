@@ -73,7 +73,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
   margin-bottom: 64px;
 }
 
@@ -114,7 +114,6 @@ h3 {
 
 p {
   margin: 0 0 16px;
-  color: var(--text-muted);
 }
 
 ul {
@@ -274,4 +273,15 @@ footer {
   .container {
     padding: 40px 20px;
   }
+}
+
+.container2 {
+  display: flex; /* Makes the container a flex container */
+  justify-content: space-between; /* Optional: distributes space between the boxes */
+  align-items: baseline;
+}
+
+.box2 {
+  flex: 1; /* Optional: ensures both boxes grow equally to fill the container */
+  font-size: 0;
 }
