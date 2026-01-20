@@ -72,7 +72,7 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: right;
   margin-bottom: 64px;
 }
@@ -277,7 +277,7 @@ footer {
 
 .container2 {
   display: flex; /* Makes the container a flex container */
-  justify-content: space-between; /* Optional: distributes space between the boxes */
+  justify-content: left; /* Optional: distributes space between the boxes */
   align-items: baseline;
 }
 
